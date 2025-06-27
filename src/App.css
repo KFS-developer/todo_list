@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 500px;
+  padding: 20px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #ffffff, #e8f0ff);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.todo-input input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.todo-input input:focus {
+  border-color: #6a5acd;
+}
+
+.todo-input button {
+  padding: 12px 18px;
+  font-size: 16px;
+  background: linear-gradient(to right, #6a5acd, #00bcd4);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.todo-input button:hover {
+  background: linear-gradient(to right, #5b4bc4, #00a2b8);
+  transform: scale(1.05);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: #ffffff;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s;
+  white-space: nowrap;
+}
+
+.task-actions button:first-child {
+  background-color: #ff9800;
+  color: white;
+}
+
+.task-actions button:last-child {
+  background-color: #e91e63;
+  color: white;
+}
+
+.task-actions button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .todo-input {
+    flex-direction: column;
+  }
+
+  .todo-input input {
+    width: 90%;
+  }
+
+  .todo-input button {
+    width: 100%;
+  }
+
+  .task-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
