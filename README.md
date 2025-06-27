@@ -60,8 +60,8 @@ npm run dev
 
 ## 🌍 Live Demo
 
-Coming soon...  
-Host your frontend using **Vercel**/**Netlify** and backend via **Render**/**Glitch**.
+🖥️ App Link: [Visit Live Site](https://todo-list-ketuls-projects-f6da0a39.vercel.app/)
+> Experience task management with a responsive and intuitive interface. No login required—your tasks are saved locally in your browser!
 
 ---
 
